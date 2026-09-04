@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000">
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView" android:layout_width="match_parent" android:layout_height="match_parent" app:scaleType="fillCenter"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:orientation="vertical" android:padding="18dp" android:background="#AA000000">
+        <TextView android:id="@+id/pageCounter" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="صفحات اسکن‌شده: ۰" android:textColor="#FFFFFF" android:textSize="17sp" android:gravity="center" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="هر صفحه: «اسکن صفحه» ← پایان: دکمه بازگشت؛ PDF خودکار ساخته می‌شود" android:textColor="#EEEEEE" android:textSize="13sp" android:gravity="center" android:paddingTop="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:gravity="center" android:orientation="horizontal" android:padding="18dp" android:background="#AA000000">
+        <Button android:id="@+id/captureButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="📷 اسکن صفحه" android:textAllCaps="false"/>
+
+    </LinearLayout>
+</FrameLayout>
